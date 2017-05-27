@@ -37,3 +37,7 @@ h4{
 .btn{
 	margin-top:20px;
 }
+
+.pointer {
+  cursor: pointer;
+}
