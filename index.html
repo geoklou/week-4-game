@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+<!--div for instruction-->
+<div>
+    <h1>Crystals Collector</h1>
+    <h4 style="text-align: center;">Click a crystal to match your <strong><span style="color:blue;">total score</span></strong> with the <span class="displayRandom">number</span> and win a game. <br>You lose a game if your score goes above the <span class="displayRandom">number</span>.</h4>
+</div>
+
+<div class="container">
+<!--div for gems-->
+<div id="gems">
+		<div class="col-md-12">
+			<div class="col-md-2">
+			</div>
+			<div class="col-md-2">
+				<img id="gem1" class="gem" src="assets/images/blue.png" value="blue">
+			</div>
+			<div class="col-md-2">
+				<img id="gem2" class="gem" src="assets/images/red.png" value="red">
+			</div>
+			<div class="col-md-2">
+				<img id="gem3" class="gem" src="assets/images/green.png" value="green">
+			</div>
+			<div class="col-md-2">
+				<img id="gem4" class="gem" src="assets/images/purple.png" value="purple">
+			</div>
+			<div class="col-md-2">
+			</div>
+		</div>
+	</div> 
+
+<!-- div to display random number - maroon text-->
+<div id="randomNumber" class="displayRandom"></div>
+
+<!--div to display scores-->
+	<div class="board">
+		<h4 id="h4score"><strong><span style="color:blue;">Total Score:</span></strong> 
+			<span id= "score"></span>
+		</h4>
+		<h4 id="h4win">Wins:
+			<span id= "win"></span>
+		</h4>
+		<h4 id="h4lose">Losses: 
+			<span id= "loss"></span>
+		</h4>
+	</div>
+ 
+<!--reload page for convenience-->
+<input type="button" value="Start a new game. (will erase scores)" onClick="window.location.reload()" class="btn">
+
+</body>
+<!--call js-->
+<script src="assets/javascript/game.js"></script>
+</html>

@@ -1,0 +1,39 @@
+/* crystal collector*/
+body{
+	font-family: sans-serif;
+	font-size: 16px;
+	margin:0 auto;
+}
+
+h1{
+	line-height: 140%;
+	font-size:40px;
+	font-weight: bold;
+	color:#000099;
+	text-align: center;
+}
+
+#gems{
+text-align: center;
+margin:5px 10px 50px 5px;
+
+}
+
+.displayRandom{
+	font-size:30px; 
+	font-weight:bold;
+	color:#990000; 
+	text-align: left; 
+	/*margin-left:20px;*/
+	clear:both;
+	/*border:1px #333 inset;*/
+	/*padding:1px;*/
+}
+
+h4{
+	font-size:20px;
+}
+
+.btn{
+	margin-top:20px;
+}
